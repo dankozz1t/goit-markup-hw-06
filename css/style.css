@@ -386,9 +386,11 @@ img {
 }
 
 /*  checkbox */
-.form-polity {
+
+.polity-label {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   margin: 0 0 30px 0;
   font-size: 14px;
@@ -398,6 +400,37 @@ img {
   color: var(--primary-text-color);
 }
 
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin: 0 7px 0 0;
+
+  border: 2px solid var(--primary-background-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .icon-check {
+  background-image: url(../images/icon-check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+
+  transition: transform var(--transition-time) var(--transition-cubic);
+}
+
+.checkbox:hover + .icon-check,
+.checkbox:focus + .icon-check {
+  transform: scale(1.1);
+}
+
+.form-link {
+  color: var(--accent-color);
+}
+
+/* button submit */
 .form-send-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
