@@ -317,7 +317,10 @@ img {
 /* form */
 .form {
   color: var(--title-text-color);
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-title {
