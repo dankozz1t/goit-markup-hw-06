@@ -67,7 +67,9 @@
                 for your business
             </h1>
 
-            <button class="hero-btn" data-modal-open type="button">Order service</button>
+            <button class="hero-btn btn" data-modal-open type="button">
+                Order service
+            </button>
 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -76,6 +78,43 @@
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+
+                    <form class="form">
+                        <h1 class="form-title">
+                            Leave your details, we will call you back
+                        </h1>
+                        <div class="form-field form-column form-name">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-input" type="text" name="name" id="name" autofocus />
+                        </div>
+                        <div class="form-field form-column form-tel">
+                            <label class="form-label" for="tel">Phone</label>
+                            <input class="form-input" type="tel" name="tel" id="tel" />
+                        </div>
+
+                        <div class="form-field form-column form-email">
+                            <label class="form-label" for="mail">Email</label>
+                            <input class="form-input" type="email" name="mail" id="mail" />
+                        </div>
+
+                        <div class="form-field form-column form-comment">
+                            <label class="form-label" for="comment">Comment</label>
+                            <textarea class="comment" name="comment" id="comment" rows="8"
+                                placeholder="Enter text"></textarea>
+                        </div>
+
+                        <div class="form-field form-polity">
+                            <input type="checkbox" name="policy" id="policy" />
+                            <label class="form-label" for="policy">
+                                I agree to the newsletter and accept the
+                                <a class="link" href="">Terms of an agreement</a>
+                            </label>
+                        </div>
+
+                        <button class="form-send-btn btn" data-modal-open type="button">
+                            Send
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -92,8 +131,8 @@
                         </div>
                         <h3 class="features-title">Attention to detail</h3>
                         <p class="features-text">
-                            Ideological considerations, as well as the beginning of daily work on
-                            position formation.
+                            Ideological considerations, as well as the beginning of daily
+                            work on position formation.
                         </p>
                     </li>
                     <li class="feature-item">
@@ -104,8 +143,8 @@
                         </div>
                         <h3 class="features-title">Punctuality</h3>
                         <p class="features-text">
-                            The task of the organization, in particular the framework and place of learning
-                            personnel entails.
+                            The task of the organization, in particular the framework and
+                            place of learning personnel entails.
                         </p>
                     </li>
                     <li class="feature-item">
@@ -128,8 +167,8 @@
                         </div>
                         <h3 class="features-title">Modern technologies</h3>
                         <p class="features-text">
-                            The significance of these problems is so obvious that the implementation
-                            planned tasks.
+                            The significance of these problems is so obvious that the
+                            implementation planned tasks.
                         </p>
                     </li>
                 </ul>
@@ -149,7 +188,6 @@
                         <img src="./images/mobile-applications.jpg" alt="Mobile applications" width="370"
                             height="294" />
                         <h3 class="presentation-text">MOBILE APPLICATIONS</h3>
-
                     </li>
                     <li class="img-item">
                         <img src="./images/design-solutions.jpg" alt="Design solutions" width="370" height="294" />
@@ -200,7 +238,6 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
                     </li>
                     <li class="team-item">
@@ -394,7 +431,7 @@
                 </address>
             </div>
             <div class="footer-social">
-                <h2 class="social-join">FOLLOW US</h2>
+                <h2 class="footer-title">FOLLOW US</h2>
                 <ul class="join-social">
                     <li class="join-item">
                         <a class="join-link" href="">
@@ -425,6 +462,22 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="footer-newsletter">
+
+                <h2 class="footer-title">SUBSCRIBE TO NEWSLETTER</h2>
+
+                <div class="newsletter-box">
+                    <input class="newsletter-email" type="email" name="email" placeholder="E-mail" />
+
+                    <button class="btn newsletter-btn" type="submit">
+                        <span class="newsletter-btn-title">Subscribe</span>
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
